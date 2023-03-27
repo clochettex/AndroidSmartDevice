@@ -1,0 +1,122 @@
+[
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/layout_activity_main.xml.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/layout/activity_main.xml"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/layout_device_cell.xml.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-38:/layout/device_cell.xml"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/xml_root_preferences.xml.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/xml/root_preferences.xml"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_play_icon.png.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/drawable/play_icon.png"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/layout_device_cell.xml.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/layout/device_cell.xml"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/layout_activity_scan.xml.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/layout/activity_scan.xml"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/raw_bar.json.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/raw/bar.json"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/mipmap-anydpi-v33/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_bluetooth_icon.png.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/drawable/bluetooth_icon.png"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_light_bulb_grey_icon.png.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/drawable/light_bulb_grey_icon.png"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_pause_icon.png.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/drawable/pause_icon.png"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/layout_activity_device_details.xml.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/layout/activity_device_details.xml"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_circle_icon.png.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/drawable/circle_icon.png"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/xml_backup_rules.xml.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-pngs-31:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_light_bulb_blue_icon.png.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/drawable/light_bulb_blue_icon.png"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/mipmap-hdpi/ic_launcher.webp"
+    }
+]
