@@ -10,11 +10,15 @@ color teal_200
 color teal_700
 color white
 drawable bluetooth_icon
+drawable circle_dark_blue
 drawable circle_icon
+drawable circle_light_blue
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable light_bulb_blue_icon
 drawable light_bulb_grey_icon
+drawable light_bulb_red_icon
+drawable light_bulb_yellow_icon
 drawable pause_icon
 drawable play_icon
 id affichageTextView
@@ -25,6 +29,7 @@ id buttonBegin
 id deviceName
 id distanceNumber
 id divider
+id group
 id imageBluetooth
 id macAddress
 id nombreTextView1
@@ -48,6 +53,7 @@ string app_name
 string attachment_summary_off
 string attachment_summary_on
 string attachment_title
+string btn
 string button_main_activity
 string clic_bouton3
 string clic_bouton_principal

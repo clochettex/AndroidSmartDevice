@@ -21,6 +21,7 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_title">Download incoming attachments</string>
+    <string name="btn"/>
     <string name="button_main_activity">Commencer</string>
     <string name="clic_bouton3">Nombre de clics sur le 3e bouton :</string>
     <string name="clic_bouton_principal">Nombre de clics sur le bouton principal :</string>

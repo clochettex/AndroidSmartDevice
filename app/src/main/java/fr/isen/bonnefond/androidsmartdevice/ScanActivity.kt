@@ -120,7 +120,6 @@ class ScanActivity : AppCompatActivity() {
 
     private fun initList() {
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
-
         binding.recyclerView.adapter = DeviceAdapter(leDeviceListAdapter) { deviceName, MAC ->
             val intent = Intent(this@ScanActivity, DeviceDetailsActivity::class.java)
             intent.putExtra("DEVICE_NAME", deviceName)

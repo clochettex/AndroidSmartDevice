@@ -2792,7 +2792,9 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable circle_dark_blue
 drawable circle_icon
+drawable circle_light_blue
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2815,6 +2817,8 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
 drawable light_bulb_blue_icon
 drawable light_bulb_grey_icon
+drawable light_bulb_red_icon
+drawable light_bulb_yellow_icon
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3103,6 +3107,7 @@ id ghost_view_holder
 id gone
 id graph
 id graph_wrap
+id group
 id group_divider
 id grouping
 id groups
@@ -3667,6 +3672,7 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
+string btn
 string button_main_activity
 string character_counter_content_description
 string character_counter_overflowed_content_description

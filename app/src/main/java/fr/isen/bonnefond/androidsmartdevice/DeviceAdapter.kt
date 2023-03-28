@@ -17,14 +17,19 @@ class DeviceAdapter(private val devices: ScanActivity.Devices, private val onIte
         val deviceName = binding.deviceName
         val macAddress = binding.macAddress
         val distanceNumber = binding.distanceNumber
+        val image = binding.rond
     }
 
     override fun getItemCount(): Int = devices.size
 
     override fun onBindViewHolder(holder: DeviceViewHolder, position: Int) {
-        //val device = devices[position]
         holder.deviceName.text = devices.device_name[position]
         holder.macAddress.text = devices.MAC[position]
+        if(devices.distance[position] >= -65) {
+            holder.image.setImageResource(R.drawable.circle_light_blue)
+        } else {
+            holder.image.setImageResource(R.drawable.circle_dark_blue)
+        }
         holder.distanceNumber.text = devices.distance[position].toString()
 
         holder.itemView.setOnClickListener {
