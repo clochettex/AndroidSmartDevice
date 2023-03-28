@@ -8,8 +8,8 @@
         "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/layout/activity_scan.xml"
     },
     {
-        "merged": "fr.isen.bonnefond.androidsmartdevice.app-mergeDebugResources-35:/layout/device_cell.xml",
-        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-38:/layout/device_cell.xml"
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-mergeDebugResources-35:/layout/activity_device_details.xml",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-38:/layout/activity_device_details.xml"
     },
     {
         "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-mergeDebugResources-35:/layout/device_cell.xml",

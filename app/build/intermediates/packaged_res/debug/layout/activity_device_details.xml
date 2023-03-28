@@ -9,11 +9,10 @@
     <ImageView
         android:id="@+id/bulb3"
         android:layout_width="64dp"
-        android:layout_height="92dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.631"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bulb2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.311"
         app:srcCompat="@drawable/light_bulb_grey_icon" />
@@ -25,7 +24,7 @@
         android:fontFamily="sans-serif-black"
         android:text="TextView"
         android:textColor="#5293FD"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,6 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/affichage"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.275"
@@ -49,33 +49,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/clic_bouton_principal"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/affichageTextView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.441" />
+        app:layout_constraintVertical_bias="0.44" />
 
     <TextView
         android:id="@+id/nombreTextView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/clic_bouton3"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.326"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/affichageTextView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.528" />
 
     <ImageView
         android:id="@+id/bulb1"
         android:layout_width="64dp"
-        android:layout_height="92dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.178"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/affichageTextView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.311"
         app:srcCompat="@drawable/light_bulb_grey_icon" />
@@ -83,11 +80,10 @@
     <ImageView
         android:id="@+id/bulb2"
         android:layout_width="64dp"
-        android:layout_height="92dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.406"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bulb1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.311"
         app:srcCompat="@drawable/light_bulb_grey_icon" />

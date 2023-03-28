@@ -22,8 +22,8 @@
     </string>
     <string name="attachment_title">Download incoming attachments</string>
     <string name="button_main_activity">Commencer</string>
-    <string name="clic_bouton3">Nombre de clique sur le 3e bouton :</string>
-    <string name="clic_bouton_principal">Nombre de clique sur le bouton principal :</string>
+    <string name="clic_bouton3">Nombre de clics sur le 3e bouton :</string>
+    <string name="clic_bouton_principal">Nombre de clics sur le bouton principal :</string>
     <string name="description">Appuyer sur commencer pour démarrer vos interactions avec des appareils BLE</string>
     <string name="messages_header">Messages</string>
     <string name="reply_title">Default reply action</string>

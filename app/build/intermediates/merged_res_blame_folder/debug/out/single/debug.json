@@ -4,16 +4,12 @@
         "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/layout/activity_main.xml"
     },
     {
-        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/layout_device_cell.xml.flat",
-        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-38:/layout/device_cell.xml"
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/mipmap-mdpi/ic_launcher.webp"
     },
     {
         "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/xml_root_preferences.xml.flat",
         "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/xml/root_preferences.xml"
-    },
-    {
-        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/mipmap-mdpi/ic_launcher.webp"
     },
     {
         "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -22,6 +18,10 @@
     {
         "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_play_icon.png.flat",
         "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/drawable/play_icon.png"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/layout_activity_device_details.xml.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-38:/layout/activity_device_details.xml"
     },
     {
         "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/layout_device_cell.xml.flat",

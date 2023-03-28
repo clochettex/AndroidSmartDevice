@@ -64,6 +64,14 @@ class ScanActivity : AppCompatActivity() {
         checkPermissions()
         startScan(bluetoothLeScanner)
 
+        onStop()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        if(bluetoothAdapter?.isEnabled == true){
+            scanning = false
+        }
     }
 
     private fun checkPermissions() {
@@ -112,9 +120,6 @@ class ScanActivity : AppCompatActivity() {
 
     private fun initList() {
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
-        val devices: ArrayList<String> = ArrayList()
-        devices.add("TEST")
-        devices.add("TEST2")
 
         binding.recyclerView.adapter = DeviceAdapter(leDeviceListAdapter) { deviceName, MAC ->
             val intent = Intent(this@ScanActivity, DeviceDetailsActivity::class.java)
@@ -138,17 +143,12 @@ class ScanActivity : AppCompatActivity() {
     }
 
 
+    @SuppressLint("MissingPermission")
     private fun scanLeDevice(bluetoothLeScanner : BluetoothLeScanner) {
     if (!scanning) {
         handler.postDelayed({
             scanning = false
-            if (ActivityCompat.checkSelfPermission(
-                    this,
-                    BLUETOOTH_SCAN
-                ) == PackageManager.PERMISSION_GRANTED
-            ) {
-                bluetoothLeScanner.stopScan(leScanCallback)
-            }
+            bluetoothLeScanner.stopScan(leScanCallback)
         }, SCAN_PERIOD)
         scanning = true
         bluetoothLeScanner.startScan(leScanCallback)
@@ -162,7 +162,7 @@ class ScanActivity : AppCompatActivity() {
     private val leScanCallback: ScanCallback = object : ScanCallback() {
         override fun onScanResult(callbackType: Int, result: ScanResult) {
             super.onScanResult(callbackType, result)
-            leDeviceListAdapter.addDevice(result.device, this@ScanActivity, result.rssi)
+            leDeviceListAdapter.addDevice(result.device, result.rssi)
             binding.recyclerView.adapter = DeviceAdapter(leDeviceListAdapter) { deviceName, MAC ->
                 val intent = Intent(this@ScanActivity, DeviceDetailsActivity::class.java)
                 intent.putExtra("DEVICE_NAME", deviceName)
@@ -178,20 +178,17 @@ class ScanActivity : AppCompatActivity() {
         var distance : ArrayList<Int> = ArrayList()
         var size = 0
 
-        fun addDevice(device: BluetoothDevice, context: Context, rssi: Int) {
-            if (ActivityCompat.checkSelfPermission(
-                    context,BLUETOOTH_CONNECT
-                ) == PackageManager.PERMISSION_GRANTED
-            ) {
-                if (!device.name.isNullOrBlank()) {
+        @SuppressLint("MissingPermission")
+        fun addDevice(device: BluetoothDevice, rssi: Int) {
 
-                    if(!MAC.contains(device.address)) {
-                        device_name.add(device.name)
-                        MAC.add(device.address)
-                        distance.add(rssi)
-                        size++
-                        Log.d("Device", "${device.name} + $MAC")
-                    }
+            if (!device.name.isNullOrBlank()) {
+
+                if(!MAC.contains(device.address)) {
+                    device_name.add(device.name)
+                    MAC.add(device.address)
+                    distance.add(rssi)
+                    size++
+                    Log.d("Device", "${device.name} + $MAC")
                 }
             }
         }
