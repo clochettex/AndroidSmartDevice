@@ -41,7 +41,6 @@ class ScanActivity : AppCompatActivity() {
             ACCESS_FINE_LOCATION
         )
     }
-
     private lateinit var binding: ActivityScanBinding
     private var scanning = false
     private val bluetoothAdapter: BluetoothAdapter? by lazy(LazyThreadSafetyMode.NONE) {
@@ -50,7 +49,6 @@ class ScanActivity : AppCompatActivity() {
     }
 
     private val handler = Handler()
-
     private val SCAN_PERIOD: Long = 10000
 
     @SuppressLint("SetTextI18n")
@@ -63,17 +61,14 @@ class ScanActivity : AppCompatActivity() {
 
         checkPermissions()
         startScan(bluetoothLeScanner)
-
         onStop()
     }
-
     override fun onStop() {
         super.onStop()
         if(bluetoothAdapter?.isEnabled == true){
             scanning = false
         }
     }
-
     private fun checkPermissions() {
         if (REQUIRED_PERMISSIONS.all {
                 ContextCompat.checkSelfPermission(this, it) != PackageManager.PERMISSION_GRANTED
@@ -84,7 +79,6 @@ class ScanActivity : AppCompatActivity() {
             )
         }
     }
-
     private fun startScan(bluetoothLeScanner: BluetoothLeScanner) {
         if (bluetoothAdapter == null) {
             Toast.makeText(this, "Bluetooth non disponible", Toast.LENGTH_SHORT).show()
@@ -101,7 +95,6 @@ class ScanActivity : AppCompatActivity() {
             }
         }
     }
-
     private fun toggleAction(bluetoothLeScanner: BluetoothLeScanner) {
         if (!scanning) {
             binding.titleScan.text = "Scan en cours..."
@@ -117,7 +110,6 @@ class ScanActivity : AppCompatActivity() {
             scanning = false
         }
     }
-
     private fun initList() {
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         binding.recyclerView.adapter = DeviceAdapter(leDeviceListAdapter) { deviceName, MAC ->
@@ -127,7 +119,6 @@ class ScanActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         when (requestCode) {
@@ -140,8 +131,6 @@ class ScanActivity : AppCompatActivity() {
             }
         }
     }
-
-
     @SuppressLint("MissingPermission")
     private fun scanLeDevice(bluetoothLeScanner : BluetoothLeScanner) {
     if (!scanning) {
@@ -156,7 +145,6 @@ class ScanActivity : AppCompatActivity() {
         bluetoothLeScanner.stopScan(leScanCallback)
     }
 }
-
     private val leDeviceListAdapter = Devices()
     private val leScanCallback: ScanCallback = object : ScanCallback() {
         override fun onScanResult(callbackType: Int, result: ScanResult) {
@@ -176,7 +164,6 @@ class ScanActivity : AppCompatActivity() {
         var MAC: ArrayList<String> = ArrayList()
         var distance : ArrayList<Int> = ArrayList()
         var size = 0
-
         @SuppressLint("MissingPermission")
         fun addDevice(device: BluetoothDevice, rssi: Int) {
 
@@ -193,4 +180,3 @@ class ScanActivity : AppCompatActivity() {
         }
     }
 }
-

@@ -6,18 +6,15 @@ import android.content.Context
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Spannable
-import android.text.SpannableString
-import android.text.style.ForegroundColorSpan
 import android.util.Log
 import android.view.View
 import fr.isen.bonnefond.androidsmartdevice.databinding.ActivityDeviceDetailsBinding
 import java.util.*
-
 class DeviceDetailsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDeviceDetailsBinding
-    private var compteur1 = 0
-    private var compteur2 = 0
+    private var compteur = 0
+
+    private var notifications = false
 
     private var brightBlue = false
     private var brightYellow = false
@@ -31,11 +28,15 @@ class DeviceDetailsActivity : AppCompatActivity() {
         val bluetoothManager = getSystemService(Context.BLUETOOTH_SERVICE) as BluetoothManager
         bluetoothManager.adapter
     }
-
     private var bluetoothGatt: BluetoothGatt? = null
 
+    //allumer les leds
     private val serviceUUID = UUID.fromString("0000feed-cc7a-482a-984a-7f2ed5b3e58f")
     private val characteristicUUID = UUID.fromString("0000abcd-8e22-4541-9d4c-21edae82ed19")
+
+    //boutons cliquables
+    private val characteristicButtonUUID = UUID.fromString("00001234-8e22-4541-9d4c-21edae82ed19")
+    private val configNotifications = UUID.fromString("00002902-0000-1000-8000-00805f9b34fb")
 
     @SuppressLint("MissingPermission", "SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -52,25 +53,9 @@ class DeviceDetailsActivity : AppCompatActivity() {
 
         binding.group.visibility = View.GONE
 
-        binding.nombreTextView1.setOnClickListener(){
-            compteur1++
-            binding.nombreTextView1.text = "Nombre de clics sur le bouton principal : "
-            binding.nombreTextView1.append(SpannableString("$compteur1").apply { setSpan(
-                ForegroundColorSpan(Color.parseColor("#5293FD")), 0, length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE) })
-        }
-        binding.nombreTextView2.setOnClickListener() {
-            compteur2++
-            binding.nombreTextView2.text = "Nombre de clics sur le 3e bouton : "
-            binding.nombreTextView2.append(SpannableString("$compteur2").apply { setSpan(
-                ForegroundColorSpan(Color.parseColor("#5293FD")), 0, length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE) })
-        }
-
-
-
         binding.bulb1.setImageResource(bulb1Image)
         binding.bulb2.setImageResource(bulb2Image)
         binding.bulb3.setImageResource(bulb3Image)
-
 
         binding.bulb1.setOnClickListener(){
             toggleAction(1)
@@ -82,20 +67,18 @@ class DeviceDetailsActivity : AppCompatActivity() {
             toggleAction(3)
         }
     }
-
-
     private fun toggleAction(bulbNumber: Int) {
         when (bulbNumber) {
             1 -> {
                 if(!brightBlue) {
                     bulb1Image = R.drawable.light_bulb_blue_icon
-                    sendCommand(byteArrayOf(0x01))
                     bulb2Image = R.drawable.light_bulb_grey_icon
                     bulb3Image = R.drawable.light_bulb_grey_icon
                     binding.bulb2.setImageResource(bulb2Image)
                     binding.bulb3.setImageResource(bulb3Image)
                     brightRed = false
                     brightYellow = false
+                    sendCommand(byteArrayOf(0x01))
                 }
                 else {
                     bulb1Image = R.drawable.light_bulb_grey_icon
@@ -107,13 +90,13 @@ class DeviceDetailsActivity : AppCompatActivity() {
             2 -> {
                 if(!brightYellow) {
                     bulb2Image = R.drawable.light_bulb_yellow_icon
-                    sendCommand(byteArrayOf(0x02))
                     bulb1Image = R.drawable.light_bulb_grey_icon
                     bulb3Image = R.drawable.light_bulb_grey_icon
                     binding.bulb1.setImageResource(bulb1Image)
                     binding.bulb3.setImageResource(bulb3Image)
                     brightRed = false
                     brightBlue = false
+                    sendCommand(byteArrayOf(0x02))
                 }
                 else {
                     bulb2Image = R.drawable.light_bulb_grey_icon
@@ -125,13 +108,13 @@ class DeviceDetailsActivity : AppCompatActivity() {
             3 -> {
                 if(!brightRed) {
                     bulb3Image = R.drawable.light_bulb_red_icon
-                    sendCommand(byteArrayOf(0x03))
                     bulb1Image = R.drawable.light_bulb_grey_icon
                     bulb2Image = R.drawable.light_bulb_grey_icon
                     binding.bulb1.setImageResource(bulb1Image)
                     binding.bulb2.setImageResource(bulb2Image)
                     brightBlue = false
                     brightYellow = false
+                    sendCommand(byteArrayOf(0x03))
                 }
                 else {
                     bulb3Image = R.drawable.light_bulb_grey_icon
@@ -148,7 +131,7 @@ class DeviceDetailsActivity : AppCompatActivity() {
         }
     }
     private val gattCallback = object : BluetoothGattCallback() {
-        @SuppressLint("MissingPermission")
+        @SuppressLint("MissingPermission", "SetTextI18n")
         override fun onConnectionStateChange(gatt: BluetoothGatt?, status: Int, newState: Int) {
             when (newState) {
                 BluetoothProfile.STATE_CONNECTED -> {
@@ -158,6 +141,11 @@ class DeviceDetailsActivity : AppCompatActivity() {
                 BluetoothProfile.STATE_DISCONNECTED -> {
                     runOnUiThread {
                         binding.group.visibility = View.GONE
+
+                        val color = Color.parseColor("#F80D1B")
+                        binding.connectedTextView.setTextColor(color)
+                        binding.connectedTextView.text ="Disconnected"
+                        binding.connectedImageView.setImageResource(R.drawable.disconnected_icon)
                     }
                     bluetoothGatt?.close()
                 }
@@ -172,23 +160,49 @@ class DeviceDetailsActivity : AppCompatActivity() {
                 BluetoothGatt.GATT_SUCCESS -> {
                     Log.d("STATUS", "Services discovered successfully.")
                     val service = gatt?.getService(serviceUUID)
-                    val characteristic = service?.getCharacteristic(characteristicUUID)
-                    characteristic?.let { enableNotifications(it) }
+                    val characteristicButton = service?.getCharacteristic(characteristicButtonUUID)
+                    binding.checkBox.setOnClickListener {
+                        if(!notifications) {
+                            characteristicButton?.let { enableNotifications(it) }
+                        } else {
+                            characteristicButton?.let { disableNotifications(it) }
+                        }
+                    }
                 }
                 else -> {
                     Log.d("STATUS", "Service discovery failed: $status")
                 }
             }
         }
+
+        @Deprecated("Deprecated in Java")
         override fun onCharacteristicChanged(gatt: BluetoothGatt?, characteristic: BluetoothGattCharacteristic?) {
-            val value = characteristic?.toString()
-            Log.d("Bluetooth", "Received value: $value")
+            if(characteristic?.uuid == characteristicUUID) {
+                val value = characteristic?.toString()
+                Log.d("Bluetooth", "Received value: $value")
+            }
+            if(characteristic?.uuid == characteristicButtonUUID) {
+                val value = characteristic?.getIntValue(BluetoothGattCharacteristic.FORMAT_UINT8, 0)
+                runOnUiThread {
+                    binding.nombre.text = value.toString()
+                }
+
+                Log.d("Bluetooth", "Received value: $value")
+            }
         }
     }
-
     @SuppressLint("MissingPermission")
     fun enableNotifications(characteristic: BluetoothGattCharacteristic) {
+        val descriptor = characteristic.getDescriptor(configNotifications)
+        descriptor.value = BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE
+        bluetoothGatt?.writeDescriptor(descriptor)
         bluetoothGatt?.setCharacteristicNotification(characteristic, true)
+        notifications = true
+    }
+    @SuppressLint("MissingPermission")
+    fun disableNotifications(characteristic: BluetoothGattCharacteristic) {
+        bluetoothGatt?.setCharacteristicNotification(characteristic, false)
+        notifications = false
     }
     @SuppressLint("MissingPermission")
     fun sendCommand(command: ByteArray) {

@@ -20,6 +20,10 @@
         "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/drawable/play_icon.png"
     },
     {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_connected_icon.png.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/drawable/connected_icon.png"
+    },
+    {
         "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/layout_activity_device_details.xml.flat",
         "source": "fr.isen.bonnefond.androidsmartdevice.app-main-38:/layout/activity_device_details.xml"
     },
@@ -98,6 +102,10 @@
     {
         "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_disconnected_icon.png.flat",
+        "source": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-main-38:/drawable/disconnected_icon.png"
     },
     {
         "merged": "/Users/chloebonnefond/.gradle/daemon/7.5/fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-mdpi_ic_launcher_round.webp.flat",

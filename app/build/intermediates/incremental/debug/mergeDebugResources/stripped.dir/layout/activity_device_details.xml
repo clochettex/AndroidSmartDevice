@@ -14,7 +14,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/bulb2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.311"
+        app:layout_constraintVertical_bias="0.35"
         app:srcCompat="@drawable/light_bulb_grey_icon" />
 
     <TextView
@@ -24,7 +24,7 @@
         android:fontFamily="sans-serif-black"
         android:text="TextView"
         android:textColor="#5293FD"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,29 +42,19 @@
         app:layout_constraintHorizontal_bias="0.275"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.242" />
+        app:layout_constraintVertical_bias="0.26" />
 
     <TextView
-        android:id="@+id/nombreTextView1"
+        android:id="@+id/nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/clic_bouton_principal"
+        android:layout_marginStart="16dp"
+        android:text="0"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/affichageTextView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44" />
-
-    <TextView
-        android:id="@+id/nombreTextView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/clic_bouton3"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/affichageTextView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.528" />
+        app:layout_constraintStart_toEndOf="@+id/clicTextView"
+        app:layout_constraintTop_toTopOf="@+id/clicTextView"
+        app:layout_constraintVertical_bias="0" />
 
     <ImageView
         android:id="@+id/bulb1"
@@ -74,7 +64,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/affichageTextView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.311"
+        app:layout_constraintVertical_bias="0.35"
         app:srcCompat="@drawable/light_bulb_grey_icon" />
 
     <ImageView
@@ -85,17 +75,61 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/bulb1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.311"
+        app:layout_constraintVertical_bias="0.35"
         app:srcCompat="@drawable/light_bulb_grey_icon" />
+
+    <TextView
+        android:id="@+id/connectedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/connected"
+        android:textColor="#32B644"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/affichageTextView"
+        app:layout_constraintEnd_toStartOf="@+id/connectedImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <ImageView
+        android:id="@+id/connectedImageView"
+        android:layout_width="33dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/affichageTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        app:srcCompat="@drawable/connected_icon" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        app:constraint_referenced_ids="bulb1,bulb2,bulb3,nombreTextView1,nombreTextView2,affichageTextView"
+        app:constraint_referenced_ids="bulb1,bulb2,bulb3,nombre,affichageTextView,clicTextView,checkBox"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="RECEVOIR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nombre"
+        app:layout_constraintTop_toBottomOf="@+id/bulb3" />
+
+    <TextView
+        android:id="@+id/clicTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="@string/clic_bouton_principal"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/affichageTextView"
+        app:layout_constraintTop_toBottomOf="@+id/bulb1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

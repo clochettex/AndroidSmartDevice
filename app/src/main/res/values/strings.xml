@@ -28,8 +28,8 @@
 
     <!-- Device Activity -->
     <string name="affichage">Affichage des différentes LED</string>
-    <string name="clic_bouton_principal">Nombre de clics sur le bouton principal :</string>
-    <string name="clic_bouton3">Nombre de clics sur le 3e bouton :</string>
+    <string name="clic_bouton_principal">Nombre de clics :</string>
     <string name="btn" />
+    <string name="connected">Connected</string>
 
 </resources>

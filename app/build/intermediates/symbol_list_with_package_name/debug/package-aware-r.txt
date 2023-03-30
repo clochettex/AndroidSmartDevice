@@ -2795,11 +2795,13 @@ drawable btn_radio_on_to_off_mtrl_animation
 drawable circle_dark_blue
 drawable circle_icon
 drawable circle_light_blue
+drawable connected_icon
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable disconnected_icon
 drawable ic_arrow_back_black_24
 drawable ic_arrow_down_24dp
 drawable ic_clear_black_24
@@ -3013,11 +3015,13 @@ id center_vertical
 id chain
 id chain2
 id chains
+id checkBox
 id checkbox
 id checked
 id chronometer
 id circle_center
 id clear_text
+id clicTextView
 id clip_horizontal
 id clip_vertical
 id clockwise
@@ -3025,6 +3029,8 @@ id closest
 id collapseActionView
 id compress
 id confirm_button
+id connectedImageView
+id connectedTextView
 id constraint
 id container
 id content
@@ -3220,8 +3226,7 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id noScroll
 id noState
-id nombreTextView1
-id nombreTextView2
+id nombre
 id none
 id normal
 id north
@@ -3678,8 +3683,8 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
-string clic_bouton3
 string clic_bouton_principal
+string connected
 string copy
 string description
 string error_a11y_label
