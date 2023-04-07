@@ -1,0 +1,142 @@
+[
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/layout_activity_scan.xml.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/layout/activity_scan.xml"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/layout_device_cell.xml.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/layout/device_cell.xml"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_play_icon.png.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/drawable/play_icon.png"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_circle_icon.png.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/drawable/circle_icon.png"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-pngs-31:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/layout_activity_device_details.xml.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/layout/activity_device_details.xml"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/xml_data_extraction_rules.xml.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_circle_dark_blue.xml.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/drawable/circle_dark_blue.xml"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_light_bulb_grey_icon.png.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/drawable/light_bulb_grey_icon.png"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/raw_bar.json.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/raw/bar.json"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/mipmap-anydpi-v33/ic_launcher.xml"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/xml_root_preferences.xml.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/xml/root_preferences.xml"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_connected_icon.png.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/drawable/connected_icon.png"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_disconnected_icon.png.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/drawable/disconnected_icon.png"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_bluetooth_icon.png.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/drawable/bluetooth_icon.png"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_light_bulb_blue_icon.png.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/drawable/light_bulb_blue_icon.png"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_circle_light_blue.xml.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/drawable/circle_light_blue.xml"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_light_bulb_red_icon.png.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/drawable/light_bulb_red_icon.png"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_light_bulb_yellow_icon.png.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/drawable/light_bulb_yellow_icon.png"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/xml_backup_rules.xml.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_ic_launcher_background.xml.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/drawable_pause_icon.png.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/drawable/pause_icon.png"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/layout_activity_main.xml.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "fr.isen.bonnefond.androidsmartdevice.app-merged_res-36:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "fr.isen.bonnefond.androidsmartdevice.app-main-37:/mipmap-mdpi/ic_launcher.webp"
+    }
+]

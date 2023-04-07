@@ -1,0 +1,141 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="fr.isen.bonnefond.androidsmartdevice"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.BLUETOOTH" />
+11-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:5:5-68
+11-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:5:22-65
+12    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+12-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:6:5-74
+12-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:6:22-71
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:7:5-81
+13-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:8:5-79
+14-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+15-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:9:5-73
+15-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:9:22-70
+16    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+16-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:10:5-76
+16-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:10:22-73
+17    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+17-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:11:5-85
+17-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:11:22-82
+18
+19    <uses-feature
+19-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:13:5-16:11
+20        android:name="android.hardware.bluetooth_le"
+20-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:14:9-53
+21        android:required="true" />
+21-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:15:9-32
+22
+23    <permission
+23-->[androidx.core:core:1.9.0] /Users/chloebonnefond/.gradle/caches/transforms-3/a4522fe6b275a4534bfc0eadc1a8e0f8/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+24        android:name="fr.isen.bonnefond.androidsmartdevice.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+24-->[androidx.core:core:1.9.0] /Users/chloebonnefond/.gradle/caches/transforms-3/a4522fe6b275a4534bfc0eadc1a8e0f8/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+25        android:protectionLevel="signature" />
+25-->[androidx.core:core:1.9.0] /Users/chloebonnefond/.gradle/caches/transforms-3/a4522fe6b275a4534bfc0eadc1a8e0f8/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+26
+27    <uses-permission android:name="fr.isen.bonnefond.androidsmartdevice.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+27-->[androidx.core:core:1.9.0] /Users/chloebonnefond/.gradle/caches/transforms-3/a4522fe6b275a4534bfc0eadc1a8e0f8/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+27-->[androidx.core:core:1.9.0] /Users/chloebonnefond/.gradle/caches/transforms-3/a4522fe6b275a4534bfc0eadc1a8e0f8/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+28
+29    <application
+29-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:18:5-46:19
+30        android:allowBackup="true"
+30-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:19:9-35
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.9.0] /Users/chloebonnefond/.gradle/caches/transforms-3/a4522fe6b275a4534bfc0eadc1a8e0f8/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+32        android:dataExtractionRules="@xml/data_extraction_rules"
+32-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:20:9-65
+33        android:extractNativeLibs="false"
+34        android:fullBackupContent="@xml/backup_rules"
+34-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:21:9-54
+35        android:icon="@drawable/bluetooth_icon"
+35-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:22:9-48
+36        android:label="@string/app_name"
+36-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:23:9-41
+37        android:supportsRtl="true"
+37-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:24:9-35
+38        android:theme="@style/Theme.AndroidSmartDevice" >
+38-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:25:9-56
+39        <activity
+39-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:27:9-31:20
+40            android:name="fr.isen.bonnefond.androidsmartdevice.DeviceDetailsActivity"
+40-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:28:13-50
+41            android:exported="false" >
+41-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:29:13-37
+42        </activity>
+43        <activity
+43-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:32:9-34:40
+44            android:name="fr.isen.bonnefond.androidsmartdevice.ScanActivity"
+44-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:33:13-41
+45            android:exported="false" />
+45-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:34:13-37
+46        <activity
+46-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:35:9-45:20
+47            android:name="fr.isen.bonnefond.androidsmartdevice.MainActivity"
+47-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:36:13-41
+48            android:exported="true"
+48-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:37:13-36
+49            android:label="@string/app_name" >
+49-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:38:13-45
+50            <intent-filter>
+50-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:40:9-44:25
+51                <action android:name="android.intent.action.MAIN" />
+51-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:41:13-65
+51-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:41:21-62
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:43:13-73
+53-->/Users/chloebonnefond/AndroidStudioProjects/AndroidSmartDevice/app/src/main/AndroidManifest.xml:43:23-70
+54            </intent-filter>
+55        </activity>
+56
+57        <uses-library
+57-->[androidx.window:window:1.0.0] /Users/chloebonnefond/.gradle/caches/transforms-3/c3b734b042e3e1a43ac97bcab800c2b5/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+58            android:name="androidx.window.extensions"
+58-->[androidx.window:window:1.0.0] /Users/chloebonnefond/.gradle/caches/transforms-3/c3b734b042e3e1a43ac97bcab800c2b5/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+59            android:required="false" />
+59-->[androidx.window:window:1.0.0] /Users/chloebonnefond/.gradle/caches/transforms-3/c3b734b042e3e1a43ac97bcab800c2b5/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+60        <uses-library
+60-->[androidx.window:window:1.0.0] /Users/chloebonnefond/.gradle/caches/transforms-3/c3b734b042e3e1a43ac97bcab800c2b5/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+61            android:name="androidx.window.sidecar"
+61-->[androidx.window:window:1.0.0] /Users/chloebonnefond/.gradle/caches/transforms-3/c3b734b042e3e1a43ac97bcab800c2b5/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+62            android:required="false" />
+62-->[androidx.window:window:1.0.0] /Users/chloebonnefond/.gradle/caches/transforms-3/c3b734b042e3e1a43ac97bcab800c2b5/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+63
+64        <provider
+64-->[androidx.emoji2:emoji2:1.2.0] /Users/chloebonnefond/.gradle/caches/transforms-3/c41b4469453a8a9f9613e5cbc1cd1923/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+65            android:name="androidx.startup.InitializationProvider"
+65-->[androidx.emoji2:emoji2:1.2.0] /Users/chloebonnefond/.gradle/caches/transforms-3/c41b4469453a8a9f9613e5cbc1cd1923/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+66            android:authorities="fr.isen.bonnefond.androidsmartdevice.androidx-startup"
+66-->[androidx.emoji2:emoji2:1.2.0] /Users/chloebonnefond/.gradle/caches/transforms-3/c41b4469453a8a9f9613e5cbc1cd1923/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+67            android:exported="false" >
+67-->[androidx.emoji2:emoji2:1.2.0] /Users/chloebonnefond/.gradle/caches/transforms-3/c41b4469453a8a9f9613e5cbc1cd1923/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+68            <meta-data
+68-->[androidx.emoji2:emoji2:1.2.0] /Users/chloebonnefond/.gradle/caches/transforms-3/c41b4469453a8a9f9613e5cbc1cd1923/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+69-->[androidx.emoji2:emoji2:1.2.0] /Users/chloebonnefond/.gradle/caches/transforms-3/c41b4469453a8a9f9613e5cbc1cd1923/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+70                android:value="androidx.startup" />
+70-->[androidx.emoji2:emoji2:1.2.0] /Users/chloebonnefond/.gradle/caches/transforms-3/c41b4469453a8a9f9613e5cbc1cd1923/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/chloebonnefond/.gradle/caches/transforms-3/528f10946969151ddeecc9c08cbfcbae/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+72                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+72-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/chloebonnefond/.gradle/caches/transforms-3/528f10946969151ddeecc9c08cbfcbae/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+73                android:value="androidx.startup" />
+73-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/chloebonnefond/.gradle/caches/transforms-3/528f10946969151ddeecc9c08cbfcbae/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+74        </provider>
+75    </application>
+76
+77</manifest>

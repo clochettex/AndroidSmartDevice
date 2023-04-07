@@ -12,7 +12,6 @@ import fr.isen.bonnefond.androidsmartdevice.databinding.ActivityDeviceDetailsBin
 import java.util.*
 class DeviceDetailsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDeviceDetailsBinding
-    private var compteur = 0
 
     private var notifications = false
 
